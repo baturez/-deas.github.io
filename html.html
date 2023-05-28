@@ -9,25 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <title>İdeas</title>
-  <style>
-    #inputBlock {
-      width: 100%;
-      height: 270px;
-      border: 1px solid black;
-      padding: 10px;
-      margin-bottom: 10px;
-      resize: vertical;
-    }
-
-    #outputBlock {
-      width: 100%;
-      height: auto;
-      border: 1px solid black;
-      padding: 10px;
-      white-space: pre-wrap;
-    }
-  </style>
+  <title>İdeas</title> 
 </head>
 
 <body>
@@ -53,108 +35,50 @@
     </header>
     <main>
       <section id="home">
-        <div class="conteiner">
-          <div class="row-sm-6">
-            <div class="col-sm-12 font-monospace">
-              <div class="center">
-                <p style="padding-top: 50px; " class="h1">
-                  Öncelikle en basit diye anılan dilden başlayalım yani HTML
-                </p>
-                <p class="h4">Herşeyden önce bazen yanlış anlaşıldığı gibi HTML bir programlama dili değildir. HTML bir
-                  mark-up (~işaretleme) dilidir, yani tag denen özel işaretlerle bir yazının tümünü ya da sadece
-                  bir kısmının görünümünü ve/veya işlevini değiştirmeye yarar. Örneğin herhangi bir tag
-                  olmadan default yazı tipinde görünen bir yazı, HTML içinde önüne ve arkasına <I> ve </I>
-                  işaretleri gelince bu şekilde italik görülür.
-                </p>
-                HTML tag'leri
-                HTML tagleri bir çok farklı şekilde sınıflandırıalabilir. Bir sınıflandırma şu şekildedir:
-                1. Bir açma bir de kapama tag'inden oluşan container tag'leri,
-                2. Tek başına bulunan tag'ler.
-                Örnek olarak, ilk gruptan <span>
-                  << /span>B>Kalın yazı</B>
-                    ikinci gruptansa <span>
-                      << /span>HR> gibi gibi devam ediyor...
-              </div>
-            </div>
+        <div class="container">
+          <div class="row layer">
+
           </div>
-          <div class="row-sm-6 center">
-            <div class="col-sm-12 font-monospace">
-              <p class="h3" style="padding-top: 50px; ">Şimdi bir video ile html'den bahsedelim</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/CsRT-4sucig"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-
-              </iframe>
-
-            </div>
           </div>
 
         </div>
 
       </section>
-      <section id="about">
 
-        <div class="conteiner">
-          <div class="row-sm-6 center">
-            <div class="col-sm-12 " style="text-align: center; width: 100%;">
-              <p class="h3">Kısaca bir deneme yapalım örnek kodlarla beraber</p>
-              <textarea id="inputBlock" oninput="updateOutput()">
-                &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-   &lt;title&gt;Örnek Sayfa&lt;/title&gt;&lt;!-- Sayfanın başlığı bu kısımdan ayarlanır --&gt;
-&lt;/head&gt;
-&lt;body&gt;&lt;!-- Sayfa içerisinde değişiklik yapmak için burası kullanılır --&gt;
-  &lt;h1&gt;Merhaba, Dünya!&lt;/h1&gt;
-  &lt;!-- Kodun denemesinin Çalışması için 
-  bu kısmı silip bir üst satırdaki örnek gibi h1 etiketi açıp içerisine kendi 
-  örneğinizi yazınız! --&gt;
-  &lt;p&gt;Bu bir örnek sayfadır.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+      <section id="abouta">
 
-              </textarea>
-              <div id="outputBlock"></div>
-            
+        <div class="container">
 
+          <div class="row-sm-6">
 
+            <div class="col-sm-12 font-monospace p-5 deneme" style="text-align: center;">
+   
             </div>
 
-            <script>
-
-              function updateOutput() {
-
-                const inputContent = document.getElementById("inputBlock").value;
-
-
-                document.getElementById("outputBlock").innerHTML = inputContent;
-
-              }
-            </script>
-
           </div>
-        
 
-        <div class="row-sm-6 center">
-          <div class="col-sm-12 " style="text-align: center; width: 100%;">
-           <div class="form-check" style="display: flex; justify-content: center; margin: 0 auto; width:150px; text-align:left;"> 
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                     <p> İlgimi Çekti</p>
-                    </label>
-                  </div>
-                  
-                  <div class="form-check" style="display: flex; justify-content: center; margin: 0 auto; width:150px; text-align:left;">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      <p> İlgimi Çekmedi </p>
-                    </label>
-                  </div>
-                  <button class="btn btn-primary" style="align-items: center;" type="submit" onclick="redirect()">Gönder</button>
-                </div>
+          <div class="row-sm-6 center">
+            <div class="col-sm-12 ">
+              <div class="form-check radiobtn"
+                style="display: flex; justify-content: center; margin: 0 auto; width:150px; text-align:left;">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="good">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <p> İlgimi Çekti</p>
+                </label>
+              </div>
+
+              <div class="form-check radiobtn"
+                style="display: flex; justify-content: center; margin: 0 auto; width:150px; text-align:left;">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="bad">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  <p> İlgimi Çekmedi </p>
+                </label>
+              </div>
+              <button class="btn btn-primary gonder" style="align-items: center;" value="0" type="submit"
+                onclick="nextQuestion(good.checked,bad.checked)">Gönder</button>
+            </div>
           </div>
-        </div></div>
+        </div>
       </section>
 
 
@@ -169,7 +93,7 @@
 
 
 
-  <script src="js.js"></script>
+  <script src="java.js"></script>
 </body>
 
 </html>
